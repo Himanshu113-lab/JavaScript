@@ -84,9 +84,63 @@ while (i<=5){
 
 console.log("we used break at 3");
 
-let fruits = ["mango", "apple", "banana", "litchi", " orange" ];
+//let fruits = ["mango", "apple", "banana", "litchi", " orange" ];
 
-for(let i = 0; i<fruits.length; i++)
+//for(let i = 0; i<fruits.length; i++)
 {
-  console.log(i, fruits[i]);
+  //console.log(i, fruits[i]);
 }
+
+// const favMovie = "avatar ";
+
+// let guess = prompt("guess my favourite movie");
+
+// while ( (guess != favMovie) && (guess !="quit") ){
+//   guess = prompt("wromg guess. please try again");
+// }
+
+// if (guess == favMovie){
+//   console.log("congrats!!");
+
+// }
+// else{
+//   console.log("you quit");
+// }
+
+// let fruits = ["mongo", "apple","banana", "litchi", "orange"];
+
+// for( let i=0; i<fruits.length; i++){
+//   console.log(i, fruits[i]);
+// }
+
+let fruits = ["mongo", "apple","banana", "litchi", "orange"];
+for(fruit of fruits){
+  console.log(fruit);
+}
+
+let heroes = [["ironman", "spiderman", "thor"] , ["superman", "wonder woman", "flash"]];
+
+for (let i=0; i<heroes.length; i++ ){
+  console.log(i, heroes[i]);
+
+  for (let j=0; j<heroes[i].length; j++){
+    console.log(`j=${j}, ${heroes[i][j]}`);
+  }
+}
+
+let students = [["Himanshu", "95"], ["Dipanshu", "97"], ["Riya", "98"]];
+for(let i=0; i<students.length; i++){
+  for(let j=0; j<students[i].length; j++){
+    console.log(students[i][j]);
+  }
+}
+
+for(char of "HimanhsuPal"){
+  console.log(char);
+}
+
+//Todo App!
+console.log("Todo App");
+
+
+
