@@ -234,3 +234,178 @@ function concat(str){
  }
 
 console.log("Himanshu");
+
+//Higher Order function
+
+function multipleGreet2(func , count){  //higher order finction
+for(let i=1; i<=count; i++){
+    func();
+}
+}
+let greet2 = function(){
+    console.log("hello");
+}
+
+multipleGreet2(function() {console.log("namaste")}, 10);
+
+let odd = function(n)
+{
+    console.log(!(n%2 == 0));
+}
+
+let even = function(n){
+    console.log(n%2 == 0);
+}
+
+function oddOrEvenFactory(request){
+    if(request == "odd"){
+        let odd= function(n){
+            console.log(!(n%2 == 0));
+        }
+        return odd;
+
+    }
+    else if(request == "even"){
+        let even = function(n){
+            console.log(n%2 == 0);
+        }
+        return even;
+    }
+    else{
+        console.log("wrong request"); 
+    }
+
+    
+}
+let request = "odd"; //even
+
+//Calculator
+
+const calculator = {
+    add: function(a,b){
+        return a+b;
+    },
+
+    sub: function(a ,b){
+        return a-b;
+    },
+
+    mul: function(a ,b){
+        return a*b;
+    }
+};
+
+//Qs1. Write a JavaScript function that returns array elements larger than a number.
+
+let arr = [8,9,10,1,2,3,4,5,6,7];
+let num2 = 5;
+
+//elements larger than a number num 
+ function getElements (arr,num2){
+    for (let i=0; i<arr.length; i++){
+        if (arr[i] > num2) {
+            console.log(arr[i]);
+        }
+    }
+}
+
+getElements(arr, num2);
+
+
+//Qs2. Write a JavaScript function to extract unique characters from a string.
+// Example:str=“abcdabcdefgggh”
+// ans=“abcdefgh"
+
+let str2 = "abcdabcdefgggh";
+
+//function to get String with all unique elements 
+function getUnique(str){
+    let ans = "";
+    for (let i=0; i<str.length; i++){
+        let currChar = str[i];
+        if(ans.indexOf(currChar) == -1) {
+            // if current character is not added, then add it in ans.
+            // 
+            // Other wise it is a duplicate.
+            ans += currChar;
+        }
+    }
+    return ans;
+}
+
+getUnique(str)
+
+
+
+//Qs3. Write a JavaScript function  that accepts a list of country names as input and
+//  returns the longest country name as output.
+//Example:country=["Australia","Germany","United States of America"]
+// output:"United States of America"
+
+let country = ["Australia", "Germany", "United States of America"];
+function longestName(country){
+    let ansIdx = 0;
+    for (let i=0; i<country.length; i++){
+        let ansLen = country[ansIdx].length;
+        let currLen = country[i].length; 
+        if (currLen > ansLen)
+            {
+                ansIdx = i;
+            }
+        }
+        return country[ansIdx];
+    }
+
+    longestName(country);
+
+
+//Qs4. Write a javaScript function to count the number of vowels in a string argument.
+
+
+let str3 = "apnacollege";
+
+function countVowels(str3) {
+
+    let count = 0;
+
+    for (let i=0; i<str3.length; i++)
+        {
+
+        if(
+
+            str.charAt(i) == "a"  || 
+
+            str.charAt(i) == "e"  ||
+
+            str.charAt(i) == "i"  ||
+
+            str.charAt(i) == "o"  ||
+
+            str.charAt(i) == "u"
+        ) {
+            count++;
+        }
+    }
+
+    return count;
+
+}
+
+
+
+//Qs5. Write a JavaScript function to generate a random number within a range (start, end).
+
+let start = 100;
+
+let end = 200;
+
+function generateRandom(start,end) 
+
+{
+
+    let diff = end - start;
+    
+    return Math.floor(Math.random() *diff) + start;
+
+
+}
