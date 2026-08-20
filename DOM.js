@@ -181,6 +181,16 @@ console.dir(body);
 let box3 = document.querySelector(".box");
 console.dir(box3.appendChild(newP));
 
+let btn = document.querySelector("button");
+console.dir("btn");
+console.dir(btn);
+
+btn.innerText = "click me!";
+let but= box.appendChild(btn);
+
+
+console.dir(but);
+
 //Removing Elements
 //1 removeChild(element)
 //2 remove(element)
