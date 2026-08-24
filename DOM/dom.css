@@ -7,9 +7,19 @@
   color: green;
 }
 
+.skyblue{
+  background-color: skyblue;
+}
+
+.inderline{
+  text-decoration: underline purple wavy;
+}
+
 #mainImg {
   width: 35%;
 }
+
+
 
 .box {
   border: 0.25px solid black;
@@ -30,4 +40,17 @@
 
 #description {
   background-color: antiquewhite;
+}
+
+.red{
+  color: red;
+}
+
+.blue{
+  color: blue;
+}
+
+.box1{
+  border: 1px solid black;
+  background-color: pink;
 }
