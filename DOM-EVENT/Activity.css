@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+
+div{
+    height: 100px;
+    width: 500px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+ }
+
+ .box{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+ }
