@@ -96,6 +96,10 @@ body.appendChild(newP);
 let box = document.querySelector('.box');
 box.appendChild(newP);
 
+let btn = document.createElement("button");
+btn.innerText = "Click Me!";
+box.appendChild(btn);
+
 //Qs.1 a <p> with red text that says "Hey I'm red!"
 
 let para1 = document.createElement("p");
