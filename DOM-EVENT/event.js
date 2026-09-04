@@ -13,11 +13,11 @@
 //     prompt("button was clicked");
 //  };
 
-// function sayHello(){
+// function saysHello(){
 //     alert("Hello!");
 // }
 
-// btn.onclick = sayHello;
+// btn.onclick = saysHello;
 
 // ONMOUSEENTER
 
