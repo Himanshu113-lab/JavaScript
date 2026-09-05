@@ -9,6 +9,13 @@
 //     alert("button was clicked");
 //  };
 
+ let btn1 = document.querySelector("button");
+  console.dir(btn1);
+
+   btn1.onclick = function (){
+    alert("button was not clicked");
+   };
+
 //  btn.onclick = function (){
 //     prompt("button was clicked");
 //  };
@@ -63,4 +70,3 @@
 // function sayCourse(){
 //     alert("Sigma 0.9!");
 // }
-
