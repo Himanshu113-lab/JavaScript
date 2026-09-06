@@ -5,6 +5,7 @@
 
 .green{
   color: green;
+  text-decoration: solid black underline;
 }
 
 .skyblue{
@@ -14,6 +15,7 @@
 .underline{
   text-decoration: underline purple wavy;
 }
+
 
 #mainImg {
   width: 35%;
@@ -26,6 +28,11 @@
   background-color: lightgray;
   width: 200px;
   padding: 1rem;
+}
+
+
+.yellowBg{
+  background-color: yellow;
 }
 
 .boxLink {
